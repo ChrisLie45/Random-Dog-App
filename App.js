@@ -6,6 +6,7 @@ export default function App() {
 
   const [randomDog, setDog] = useState({image: 'https://images.dog.ceo/breeds/spaniel-brittany/n02101388_3673.jpg', breed: 'terrier irish'});
 
+  const clickHandler = () => {
     fetch('https://dog.ceo/api/breeds/image/random')
     .then(response => response.json())
     .then(data => {
